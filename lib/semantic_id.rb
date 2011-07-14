@@ -1,6 +1,1 @@
-require 'semantic_id/helper'
-require 'rails'
-
-ActiveSupport.on_load(:action_view) do
-	include SemanticId::Helper
-end
+require 'semantic_id/railtie' if defined?(Rails)
